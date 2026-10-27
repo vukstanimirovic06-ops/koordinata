@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>html,body{margin:0;background:#0E0D0C}a{color:#E4572E}a:hover{color:#F07A55}</style>
+</helmet>
+<div style="display:flex;gap:64px;align-items:flex-start;padding:56px;font-family:'Instrument Sans',system-ui,sans-serif;color:#ECE5D8;width:max-content;min-height:100vh;background:#0E0D0C">
+  <div style="display:flex;flex-direction:column;gap:14px">
+    <div style="display:flex;gap:12px;align-items:baseline"><span style="font-weight:700;font-size:20px">Desktop</span><span style="color:#9A9184;font-size:15px">1440 × 900</span></div>
+    <div style="width:1440px;height:900px;border:1px solid #3A3733;background:#171614;overflow:hidden">
+      <iframe src="index.html" title="Desktop" style="width:1440px;height:900px;border:0;display:block"></iframe>
+    </div>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:14px">
+    <div style="display:flex;gap:12px;align-items:baseline"><span style="font-weight:700;font-size:20px">Mobilni</span><span style="color:#9A9184;font-size:15px">375 × 812</span></div>
+    <div style="width:375px;height:812px;border:1px solid #3A3733;border-radius:36px;background:#171614;overflow:hidden;box-shadow:0 0 0 8px #24221F">
+      <iframe src="index.html" title="Mobilni" style="width:375px;height:812px;border:0;display:block"></iframe>
+    </div>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

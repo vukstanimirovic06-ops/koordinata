@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Koordinata Street — Website Blueprint</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#ECE5D8;color:#171614;font-family:'Instrument Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#B8401C}
+a:hover{color:#171614}
+</style>
+</helmet>
+
+<div style="max-width:1100px;margin:0 auto;padding:clamp(32px,6vw,80px) clamp(16px,4vw,48px)">
+  <header style="border-bottom:2px solid #171614;padding-bottom:28px">
+    <p style="margin:0;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#6B645A">Website blueprint · v1 · Oct 2026</p>
+    <h1 style="margin:10px 0 0;font-family:'Big Shoulders Display';font-weight:900;font-size:clamp(56px,10vw,128px);line-height:.85;text-transform:uppercase">Koordinata<span style="color:#E4572E">.</span> Street</h1>
+    <p style="margin:18px 0 0;font-size:18px;line-height:1.5;max-width:60ch;color:#4A453E">Design system, architecture, menu and booking UX for a two-location, chef-driven brand. Working prototype: <a href="index.html">Koordinata Street</a>.</p>
+  </header>
+
+  <section data-screen-label="01 Design system" style="padding:48px 0;border-bottom:1px solid #CFC6B6">
+    <h2 style="margin:0 0 6px;font-family:'Big Shoulders Display';font-weight:900;font-size:44px;text-transform:uppercase">01 · Design system</h2>
+    <p style="margin:0 0 24px;color:#4A453E;font-size:16px;max-width:64ch;line-height:1.5">Charcoal and linen do 90% of the work. One accent per location gives each concept its own identity without splitting the brand.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px">
+      <div style="display:flex;flex-direction:column;gap:8px"><div style="height:88px;background:#171614"></div><strong style="font-size:14px">Ugalj · #171614</strong><span style="font-size:13px;color:#6B645A">Primary dark ground</span></div>
+      <div style="display:flex;flex-direction:column;gap:8px"><div style="height:88px;background:#24221F"></div><strong style="font-size:14px">Dim · #24221F</strong><span style="font-size:13px;color:#6B645A">Panels on dark</span></div>
+      <div style="display:flex;flex-direction:column;gap:8px"><div style="height:88px;background:#9A9184"></div><strong style="font-size:14px">Kamen · #9A9184</strong><span style="font-size:13px;color:#6B645A">Meta text on dark</span></div>
+      <div style="display:flex;flex-direction:column;gap:8px"><div style="height:88px;background:#ECE5D8;border:1px solid #CFC6B6"></div><strong style="font-size:14px">Lan · #ECE5D8</strong><span style="font-size:13px;color:#6B645A">Light ground, ink on dark</span></div>
+      <div style="display:flex;flex-direction:column;gap:8px"><div style="height:88px;background:#F6F2EA;border:1px solid #CFC6B6"></div><strong style="font-size:14px">Papir · #F6F2EA</strong><span style="font-size:13px;color:#6B645A">Cards on linen</span></div>
+      <div style="display:flex;flex-direction:column;gap:8px"><div style="height:88px;background:#E4572E"></div><strong style="font-size:14px">Žar · #E4572E</strong><span style="font-size:13px;color:#6B645A">Zemun accent, primary CTA</span></div>
+      <div style="display:flex;flex-direction:column;gap:8px"><div style="height:88px;background:#C9A86A"></div><strong style="font-size:14px">Mesing · #C9A86A</strong><span style="font-size:13px;color:#6B645A">Dositejeva accent</span></div>
+      <div style="display:flex;flex-direction:column;gap:8px"><div style="height:88px;background:#7FA65A"></div><strong style="font-size:14px">Bosiljak · #7FA65A</strong><span style="font-size:13px;color:#6B645A">Status: fresh / vege</span></div>
+    </div>
+    <p style="margin:14px 0 0;font-size:13px;color:#6B645A">Accents sit on charcoal or carry charcoal text — never accent text on linen (fails contrast).</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px;margin-top:36px">
+      <div style="background:#171614;color:#ECE5D8;padding:24px"><p style="margin:0;font-family:'Big Shoulders Display';font-weight:900;font-size:64px;line-height:.85;text-transform:uppercase">Plotna</p><p style="margin:12px 0 0;font-size:14px;color:#9A9184">Big Shoulders Display 800–900 · headlines, prices, signage. Condensed street-sign energy.</p></div>
+      <div style="background:#F6F2EA;padding:24px"><p style="margin:0;font-size:22px;font-weight:600;line-height:1.3">Pljeskavica od junećeg rebra, kajmak, pečena paprika</p><p style="margin:12px 0 0;font-size:14px;color:#6B645A">Instrument Sans 400–700 · UI, menu items, body. Full Serbian Latin (č ć š ž đ).</p></div>
+      <div style="background:#F6F2EA;padding:24px"><p style="margin:0;font-family:Newsreader;font-style:italic;font-size:30px;line-height:1.2">sporije, preciznije, uz sveću</p><p style="margin:12px 0 0;font-size:14px;color:#6B645A">Newsreader Italic · quotes and bistro moments only. Signals the refined side.</p></div>
+    </div>
+
+    <h3 style="margin:36px 0 12px;font-size:18px">Micro-interactions & treatments</h3>
+    <ul style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;font-size:15px;line-height:1.5;color:#2E2B28">
+      <li><strong>Ember pulse</strong> — a live orange dot next to today’s date and “open now” states; the kitchen is on.</li>
+      <li><strong>Market ticker</strong> — full-bleed ember marquee of today’s produce and its origin (Tara, Grocka, Sjenica). Fed from the same menu data.</li>
+      <li><strong>Flickering full stop</strong> in the logo and hero — subtle flame flicker, 3s loop.</li>
+      <li><strong>Chalkboard logic</strong> — sold-out items fade and strike through instead of disappearing (scarcity = proof of freshness).</li>
+      <li><strong>Hard edges</strong> — no rounded corners, no soft gradients; 1px rules and dotted price leaders like a handwritten menu.</li>
+      <li><strong>Photography</strong> — handheld, high-contrast, steam and smoke; hands, knives, crates. Never plated-on-white stock.</li>
+      <li><strong>Press feedback</strong> — card lift on hover, accent fill on selected slot/day, instant inline confirmations.</li>
+    </ul>
+  </section>
+
+  <section data-screen-label="02 Architecture" style="padding:48px 0;border-bottom:1px solid #CFC6B6">
+    <h2 style="margin:0 0 6px;font-family:'Big Shoulders Display';font-weight:900;font-size:44px;text-transform:uppercase">02 · Information architecture</h2>
+    <p style="margin:0 0 24px;color:#4A453E;font-size:16px;max-width:64ch;line-height:1.5">One-page homepage for discovery; two lightweight location pages for SEO and direct links. Every page ends at the same booking widget.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:24px">
+      <div style="background:#171614;color:#ECE5D8;padding:24px;font-size:15px;line-height:1.9">
+        <p style="margin:0 0 8px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#9A9184">Sitemap</p>
+        <div style="font-weight:700">/ — Početna</div>
+        <div style="padding-left:18px">/zemun — Zemunska pijaca <span style="color:#9A9184">(meni, sati, mapa)</span></div>
+        <div style="padding-left:18px">/dositejeva — Bistro <span style="color:#9A9184">(degustacija, vina)</span></div>
+        <div style="padding-left:18px">/meni/[lokacija] — Živi meni</div>
+        <div style="padding-left:36px;color:#9A9184">/m/[lokacija]/[sto] — QR ulaz za stolom</div>
+        <div style="padding-left:18px">/rezervacija — Booking <span style="color:#9A9184">(?lok=zemun)</span></div>
+        <div style="padding-left:18px">/sef — Stefan Živković</div>
+        <div style="padding-left:18px">/dogadjaji — Grupe & privatne večere</div>
+        <div style="padding-left:18px;color:#9A9184">/en — English mirror</div>
+      </div>
+      <ol style="margin:0;padding-left:22px;display:flex;flex-direction:column;gap:10px;font-size:15px;line-height:1.5">
+        <li><strong>Header</strong> — logo, anchors, phone, persistent “Rezerviši sto”. Mobile: sticky bottom bar (Pozovi / Rezerviši).</li>
+        <li><strong>Hero</strong> — “Kuhinja bez zidova.”, today’s date, two CTAs, open-kitchen photo, produce ticker.</li>
+        <li><strong>Lokacije</strong> — two equal cards; live open/closed status; each card routes to its menu or booking.</li>
+        <li><strong>Meni dana</strong> — location toggle, micro-season line, “updated at” stamp, sold-out states, QR note.</li>
+        <li><strong>Šef</strong> — portrait, quote, Gault&amp;Millau credential, producers.</li>
+        <li><strong>Rezervacije</strong> — 5-step inline widget, pre-filled by the chosen location.</li>
+        <li><strong>Footer</strong> — both addresses, hours, closures, socials, coordinates.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section data-screen-label="03 Menu & booking" style="padding:48px 0;border-bottom:1px solid #CFC6B6">
+    <h2 style="margin:0 0 6px;font-family:'Big Shoulders Display';font-weight:900;font-size:44px;text-transform:uppercase">03 · Dynamic menu & QR</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px;margin-top:20px">
+      <div>
+        <h3 style="margin:0 0 10px;font-size:18px">Chef updates in 30 seconds</h3>
+        <ul style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;font-size:15px;line-height:1.5">
+          <li>Password-protected <strong>“Režim kuhinje”</strong> on the phone (try it in the prototype): toggle Nestalo, ±50 RSD, Novo danas, add dish.</li>
+          <li>Each item: name, ingredients/origin, price, category, tags (vege, alergeni 1–14 per EU list), location.</li>
+          <li>“Ažurirano u 11:42” stamp builds trust that the menu is real today.</li>
+          <li>Micro-season line and ticker pull from the same data — one edit, updated everywhere.</li>
+          <li>Optional auto-post of the daily menu as an Instagram story card.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="margin:0 0 10px;font-size:18px">QR strategy</h3>
+        <ul style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;font-size:15px;line-height:1.5">
+          <li>One printed code per table: <code>koordinata.rs/m/zemun/4</code> — opens straight to today’s menu, no app, no PDF.</li>
+          <li>Table ID enables “call the waiter” and future pay-at-table without reprinting.</li>
+          <li>Engraved wood/steel tags at the market (weather-proof); small linen cards in the bistro.</li>
+          <li>Page under 100 KB, cached offline — market Wi-Fi is unreliable.</li>
+          <li>Large type, dark mode by default (sunlight + candlelight), allergens one tap away.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 style="margin:48px 0 6px;font-family:'Big Shoulders Display';font-weight:900;font-size:44px;text-transform:uppercase">Booking workflow</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin-top:20px">
+      <div style="background:#171614;color:#ECE5D8;padding:16px"><p style="margin:0;font-family:'Big Shoulders Display';font-weight:900;font-size:32px;color:#E4572E">1</p><p style="margin:6px 0 0;font-size:14px;line-height:1.4">Lokacija — sets hours, slot length, capacity</p></div>
+      <div style="background:#171614;color:#ECE5D8;padding:16px"><p style="margin:0;font-family:'Big Shoulders Display';font-weight:900;font-size:32px;color:#E4572E">2</p><p style="margin:6px 0 0;font-size:14px;line-height:1.4">Dan — closed days greyed out</p></div>
+      <div style="background:#171614;color:#ECE5D8;padding:16px"><p style="margin:0;font-family:'Big Shoulders Display';font-weight:900;font-size:32px;color:#E4572E">3</p><p style="margin:6px 0 0;font-size:14px;line-height:1.4">Gosti — 1–8 online, 9+ routed to phone</p></div>
+      <div style="background:#171614;color:#ECE5D8;padding:16px"><p style="margin:0;font-family:'Big Shoulders Display';font-weight:900;font-size:32px;color:#E4572E">4</p><p style="margin:6px 0 0;font-size:14px;line-height:1.4">Termin — only slots that fit the party</p></div>
+      <div style="background:#171614;color:#ECE5D8;padding:16px"><p style="margin:0;font-family:'Big Shoulders Display';font-weight:900;font-size:32px;color:#E4572E">5</p><p style="margin:6px 0 0;font-size:14px;line-height:1.4">Ime + mobilni → instant SMS confirmation</p></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px;margin-top:28px">
+      <div style="background:#F6F2EA;padding:22px;border-top:4px solid #E4572E">
+        <h3 style="margin:0 0 10px;font-size:18px">Zemunska pijaca</h3>
+        <ul style="margin:0;padding-left:20px;font-size:15px;line-height:1.6">
+          <li>Lunch slots 11:00–15:30, every 30 min, ~60 min table time</li>
+          <li>Limited seats per slot; 3 tables never bookable (walk-in)</li>
+          <li>Rain rule: auto-SMS option to move to Dositejeva or reschedule</li>
+        </ul>
+      </div>
+      <div style="background:#F6F2EA;padding:22px;border-top:4px solid #C9A86A">
+        <h3 style="margin:0 0 10px;font-size:18px">Bistro Dositejeva</h3>
+        <ul style="margin:0;padding-left:20px;font-size:15px;line-height:1.6">
+          <li>28 seats, two turns (18:00–19:00 / 20:30–21:30 starts)</li>
+          <li>Tasting menu flagged at booking; allergies captured upfront</li>
+          <li>Card guarantee for 5+ guests to curb no-shows</li>
+        </ul>
+      </div>
+      <div style="background:#F6F2EA;padding:22px;border-top:4px solid #171614">
+        <h3 style="margin:0 0 10px;font-size:18px">Fewer calls to 064 593 9352</h3>
+        <ul style="margin:0;padding-left:20px;font-size:15px;line-height:1.6">
+          <li>Reminder SMS 3 h before, one-tap cancel frees the slot</li>
+          <li>Instagram/Facebook “Book” buttons deep-link to /rezervacija</li>
+          <li>Staff tablet view: day sheet, covers per slot, manual phone entry</li>
+          <li>Phone kept for groups 9+ and events only</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="04 Build" style="padding:48px 0">
+    <h2 style="margin:0 0 6px;font-family:'Big Shoulders Display';font-weight:900;font-size:44px;text-transform:uppercase">04 · Build & launch</h2>
+    <ul style="margin:16px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:8px;font-size:15px;line-height:1.5;max-width:72ch">
+      <li><strong>Front-end:</strong> static site (Astro or plain HTML), the prototype’s components ported 1:1; mobile-first, Lighthouse 95+.</li>
+      <li><strong>Menu data:</strong> headless CMS (Sanity / Directus) or a Google Sheet → JSON; webhooks rebuild the menu in seconds.</li>
+      <li><strong>Booking:</strong> small API (Supabase/Postgres) with slots + capacity tables, SMS via Infobip; or a white-labelled booking service if speed matters more than control.</li>
+      <li><strong>SEO:</strong> Restaurant schema per location, Google Business Profile booking link, Serbian primary, English mirror.</li>
+      <li><strong>Phase 1 (3 wks):</strong> site + live menu + QR. <strong>Phase 2 (3 wks):</strong> booking + SMS + staff view.</li>
+    </ul>
+  </section>
+</div>
+</x-dc>
+</body>
+</html>
